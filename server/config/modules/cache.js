@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = {
-	enabled: false,
+	enabled: true,
 	http: {
 		enabled: false
 	},
 	redis: {
-		enabled: false,
+		enabled: !!process.env.REDIS ? true : false,
 		host: !!process.env.REDIS ? process.env.REDIS.host : '127.0.0.1',
 		port:!!process.env.REDIS ? process.env.REDIS.port : '6379',
         expire: {
