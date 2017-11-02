@@ -1,0 +1,17 @@
+@import '../helpers.css';
+
+.dialog {
+    @extend .dialog-component;
+    padding: 20px;
+    &__active {
+        @extend .dialog-component-active;
+    }
+}
+
+.message {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 25px;
+    color: #323232;
+}

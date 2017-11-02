@@ -1,0 +1,29 @@
+@import '../helpers.css';
+
+.root {
+    text-align: center;
+    position: relative;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    @extend .disable-select-and-taphl;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    &__icon {
+        font-size: 30px;
+        display: block;
+        padding: 0 0 20px;
+    }
+    &__text {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}

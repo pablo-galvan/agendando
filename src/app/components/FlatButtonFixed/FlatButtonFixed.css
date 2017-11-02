@@ -1,0 +1,29 @@
+@import '../helpers.css';
+
+.button {
+    @extend .button-primary;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: var(--z-index-flat-button-fixed);
+    min-height: 47px;
+    height: 8.5%;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__label {
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        color: inherit;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    &__fake {
+        min-height: 47px;
+        height: 8.5%;
+        padding-top: 10px;
+    }
+}

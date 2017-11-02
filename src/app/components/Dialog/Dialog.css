@@ -1,0 +1,37 @@
+@import '../helpers.css';
+
+.dialog {
+    @extend .dialog-component;
+    &__active {
+        @extend .dialog-component-active;
+    }
+    &__content {
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #424242;
+    }
+}
+
+.action {
+    border-top: 1px solid #eee;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+    transition: var(--transition-time);
+    &:active,
+    &:hover {
+        background-color: #f3f3f3;
+    }
+    &__button {
+        padding: 0;
+        background: transparent;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        line-height: 45px;
+        height: 45px;
+        text-align: center;
+        font-weight: 500;
+        color: #323232;
+    }
+}

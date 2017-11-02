@@ -1,0 +1,40 @@
+@import '../helpers.css';
+
+.tab {
+    border-bottom: 1px solid #eee;
+    padding: 25px 20px;
+    cursor: pointer;
+}
+
+.title {
+    margin: 0 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #323232;
+}
+
+.description {
+    margin: 0 0 20px;
+    font-size: 13px;
+    color: #424242;
+    overflow: hidden;
+}
+
+.toggler {
+    border: 0;
+    display: block;
+    background-color: var(--primary-color);
+    color: #fff;
+    min-width: 90px;
+    margin: 0 0 0 auto;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 30px;
+    line-height: 30px;
+    outline: 0;
+    font-size: 12px;
+}

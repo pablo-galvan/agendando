@@ -1,0 +1,55 @@
+@import '../helpers.css';
+
+.button {
+    @extend .disable-select-and-taphl;
+    padding: 0;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    transition: var(--transition-time);
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    &__fullwidth {
+        width: 100%;
+        display: block;
+    }
+    &__primary {
+        background-color: var(--primary-color);
+        &:hover,
+        &:active {
+            background-color: color(var(--primary-color) whiteness(30%));
+        }
+    }
+    &__secondary {
+        background-color: var(--secondary-color);
+        &:hover,
+        &:active {
+            background-color: color(var(--secondary-color) whiteness(30%));
+        }
+    }
+    &__accent {
+        background-color: var(--accent-color);
+        &:hover,
+        &:active {
+            background-color: color(var(--accent-color) whiteness(30%));
+        }
+    }
+    &__alternative {
+        background-color: var(--alternative-accent-color);
+        &:hover,
+        &:active {
+            background-color: color(var(--alternative-accent-color) whiteness(30%));
+        }
+    }
+}
+
+.button__label {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+}

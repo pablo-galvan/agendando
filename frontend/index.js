@@ -122,8 +122,8 @@ class Frontend {
                     }
                     if (renderProps) {
                         markup = renderToString(React.createElement(
-                            Provider, 
-                            { store:  this.store }, 
+                            Provider,
+                            { store:  this.store },
                             React.createElement(RouterContext, renderProps))
                         );
                     }

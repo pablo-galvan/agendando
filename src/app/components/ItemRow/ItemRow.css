@@ -1,0 +1,130 @@
+@import '../helpers.css';
+
+.root {
+    @extend .disable-select-and-taphl;
+    display: block;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    color: #414141;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.row {
+    @extend .disable-select-and-taphl;
+    display: flex;
+    padding: 15px;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.avatar {
+    @extend .disable-select-and-taphl;
+    position: relative;
+    margin-right: 10px;
+    &__microtag {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        border: 2px solid #fff;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+        color: #fff;
+        height: 51px;
+        width: 51px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 14px;
+        line-height: 49px;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+}
+
+.thumb {
+    @extend .disable-select-and-taphl;
+    border-radius: 50%;
+    height: 115px;
+    width: 115px;
+    overflow: hidden;
+    position: relative;
+    &__img {
+        min-height: 100%;
+        max-width: 150%;
+        position: absolute;
+        top: -50%;
+        bottom: -50%;
+        left: -50%;
+        right: -50%;
+        margin: auto;
+    }
+}
+
+.info {
+    flex-grow: 1;
+    width: calc(100% - 125px);
+    position: relative;
+}
+
+.h2 {
+    text-transform: uppercase;
+    margin: 0 auto 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.description {
+    font-size: 13px;
+    line-height: 16px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.history {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0 0;
+    font-size: 13px;
+    font-weight: 500;
+    flex-wrap: wrap;
+    &__date {
+        margin: 0 15px 0 0;
+    }
+    &__icon {
+        color: var(--primary-color);
+        margin-right: 8px;
+    }
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    display: block;
+    margin: 10px 0 0 auto;
+    height: 30px;
+    line-height: 30px;
+    border: 0;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0 13px;
+    &__label {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+.disabled {
+    opacity: 0.7;
+    & .avatar__microtag,
+    & .btn {
+        background: #b2b2b2;
+    }
+
+}

@@ -1,0 +1,9 @@
+@import '../helpers.css';
+
+.root {
+    background-color: var(--primary-color);
+    background-image: url('/static/images/background.png');
+    background-size: cover;
+    color: #fff;
+    min-height: 100%;
+}

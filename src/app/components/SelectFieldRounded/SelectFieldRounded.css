@@ -1,0 +1,17 @@
+@import '../helpers.css';
+
+.selector {
+    @extend .input-text-field;
+    &__arrow {
+        font-size: 15px;
+        position: absolute;
+        right: 20px;
+        vertical-align: middle;
+        display: inline-block;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+}

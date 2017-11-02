@@ -1,0 +1,9 @@
+@import '../helpers.css';
+
+.root {
+    width: 100%;
+    display: block;
+    height: var(--appbar-height);
+    min-height: var(--appbar-min-height);
+    flex: 0 1 100%;
+}

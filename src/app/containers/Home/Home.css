@@ -1,0 +1,49 @@
+.root {
+    color: #fff;
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10%;
+    flex: 0 1 100%;
+    align-self: center;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+    margin: 0 auto 15%;
+    padding: 0 5%;
+    img {
+        max-width: 100%;
+    }
+}
+
+.login__actions {
+    text-align: center;
+    position: relative;
+}
+
+.login__text {
+    cursor: pointer;
+    font-weight: 400;
+    margin: 0;
+    padding: 15px 0;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    strong {
+        font-weight: 500;
+    }
+}

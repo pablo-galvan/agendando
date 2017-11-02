@@ -1,0 +1,5 @@
+@import '../helpers.css';
+
+.root {
+    @extend .input-text-field;
+}
